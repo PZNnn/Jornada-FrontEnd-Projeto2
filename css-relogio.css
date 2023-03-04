@@ -1,0 +1,60 @@
+body {
+    background-image: linear-gradient(to right, #079abc, #79dffe, #079abc);
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    text-shadow: 5px 3px 5px;
+}
+
+.relogio{
+    border: 30px solid rgb(255, 255, 255);
+    height: 30rem; /*Testei esse novo estilo de medida "rem"*/
+    width: 30rem;
+    border-radius: 50%;
+    position: relative;
+    padding: 3px;
+    transform: translateY(-3px);
+    margin: 50px auto;
+    margin-top: 50px;
+    padding: 2rem;
+    box-shadow: -1px 4px 12px rgba(19, 19, 19, 0.394), inset 1px 7px 20px -4px rgba(19, 19, 19, 0.394);
+    
+}
+
+.relogio-moldura{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transform: translateY(-5px); /*muda o Y do conteudo dentro*/
+    
+}
+
+.ponteiro{
+    position: absolute;
+    height: 7px;
+    width: 50%;
+    top: 50%;
+    transform-origin: 100%;
+    border-radius: 5px;
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.1, 1.7, 0.58, 1);
+}
+#hr{
+    background-color: rgb(0, 0, 0);
+    width: 168px;
+    left: 72px;
+}
+#min{
+    background-color: rgb(0, 0, 0);
+    width: 210px;
+    left: 30px;
+}
+#seg{
+    background-color: rgb(28, 28, 28);
+}
